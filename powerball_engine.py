@@ -10,7 +10,28 @@ print("The white balls are numbered 1-69 and the red ball is numbered 1-26")
 print("The white balls are sorted numerically and the red ball is listed last")
 print("for example, a winning number could be 12, 23, 34, 45, 56, 7 where 7 is the red ball")
 
+#iNITIALIZE VARIABLES AND FLAG
+WHITE_NUMBER = 69
+RED_NUMBER = 26
+in_running = True
+
+while in_running:
+    #generate winning ticket
+    winning_ticket = []
+    while len(winning_ticket) < 5:
+        white_ball = random.randint(1, WHITE_NUMBER)
+        if white_ball not in winning_ticket:
+            winning_ticket.append(white_ball)
+    winning_ticket.sort()
+    red_ball = random.randint(1, RED_NUMBER)
+    winning_ticket.append(red_ball)
+    #debug
+    print(winning_ticket)
+    input("Press Enter to continue")
+
 # 2. Get user input for number of white balls (min 5)
+
+
 
 # 3. Get user input for number of red balls (min 1)
 
