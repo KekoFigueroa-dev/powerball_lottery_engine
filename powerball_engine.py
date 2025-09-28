@@ -1,6 +1,14 @@
+#Import necessary modules
+import random
+import math
 #Powerball engine
 
-# 1. Print welcome message
+#Print welcome message and short game description
+print("---------------------Welcome to my Powerball Lottery Simulator!--------------------")
+print("The powerball lottery is a game where you pick 5 'white' and 1 'red' ball")
+print("The white balls are numbered 1-69 and the red ball is numbered 1-26")
+print("The white balls are sorted numerically and the red ball is listed last")
+print("for example, a winning number could be 12, 23, 34, 45, 56, 7 where 7 is the red ball")
 
 # 2. Get user input for number of white balls (min 5)
 
