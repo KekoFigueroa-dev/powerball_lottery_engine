@@ -26,33 +26,11 @@ while in_running:
     red_ball = random.randint(1, RED_NUMBER)
     winning_ticket.append(red_ball)
     #debug
-    print(winning_ticket)
-    input("Press Enter to continue")
+    #print(winning_ticket)
+    #input("Press Enter to continue")
 
-# 2. Get user input for number of white balls (min 5)
+    #Generate total number of tickets and get the odds of winning
 
-
-
-# 3. Get user input for number of red balls (min 1)
-
-# 4. Calculate and display odds of winning
-
-# 5. Get user input for ticket purchase interval
-
-# 6. Generate winning numbers (5 unique white balls, 1 red ball)
-
-# 7. Display winning numbers
-
-# 8. Prompt user to start purchasing tickets
-
-# 9. Initialize ticket tracking variables
-
-# 10. While user wants to play and winning ticket not found:
-    # a. Generate a new ticket (5 unique white balls, 1 red ball)
-    # b. If ticket not already sold:
-        # i. Add to tickets sold, increment counter, print ticket
-    # c. Else: print message about duplicate ticket
-    # d. After each interval, ask user if they want to continue
-
-# 11. If winning ticket found: print win message and stats
-# 12. Else: print loss message and stats
+    total_tickets = WHITE_NUMBER * (WHITE_NUMBER - 1) * (WHITE_NUMBER - 2) * (WHITE_NUMBER - 3) * (WHITE_NUMBER - 4) * RED_NUMBER // 120
+    print(f"For this powerball of {WHITE_NUMBER} white balls and {RED_NUMBER} red balls, your odds of winning are 1 in {total_tickets}, with a single ticket purchased")
+    break
